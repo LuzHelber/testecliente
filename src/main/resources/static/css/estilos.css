@@ -230,13 +230,41 @@ label {
     color: var(--azul-medio);
 }
 
-input[type="submit"] {
-  background-color: var(--azul-escuro);
-  color: white;
+
+.btn-cadastrar {
+    background-color: green;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-excluir {
+    background-color: #FF6464;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    padding: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-editar {
+  background-color: #FFD966;
+  color: black;
+  font-weight: bold;
   border: none;
   border-radius: 24px;
   padding: 15px;
   font-size: 14px;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
 }
+
+.btn-editar:hover {
+  background-color: #FFC300;
+}
+

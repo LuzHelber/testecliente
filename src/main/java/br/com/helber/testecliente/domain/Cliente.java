@@ -1,5 +1,6 @@
 package br.com.helber.testecliente.domain;
 
+import br.com.helber.testecliente.infra.repository.DadosAlteracaoClientes;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,4 +30,9 @@ public class Cliente {
         this.email = dados.email();
     }
 
+    public void atualizaDados(DadosAlteracaoClientes dados) {
+        this.nome = dados.nome();
+        this.telefone = dados.telefone();
+        this.email = dados.email();
+    }
 }
